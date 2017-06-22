@@ -293,12 +293,26 @@
     }
 }
 /* 手机端布局控制 */
+@media all and (max-width: 720px){
+    .header{
+        flex-direction: column;
+    }
+    .btn-view{
+        margin-top: 1em;
+    }
+}
 @media all and (max-width: 543px){
+    .header{
+        padding: 1.5em 0;
+    }
     .loader{
         min-width: 50%;
     }
 }
 @media all and (max-width: 365px){
+    .header{
+        padding: 1em 0;
+    }
     .loader{
         min-width: 100%;
     }
