@@ -46,10 +46,12 @@
             border: 2px solid #fff;
             border-radius: 4px;
             text-decoration: none;
+            transform: translateZ(0) scale(1);
             transition: transform .1s ease-out, border .1s ease-out, background-color .15s ease-out, color .1s ease-out;
         }
+        /* 若transform值函数(如translate3d(), scale(), rotate()等)中的参数为非整数，会导致字体模糊 */
         .btn-view:hover{
-            /*transform: translate3d(0,0,0) scale(1.02);*/
+            transform: translateZ(0) scale(1.04);
             color: #333;
             background-color: #fff;
         }
