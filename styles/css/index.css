@@ -7734,6 +7734,11 @@ td.visible-print {
     transform: translate(0, 0) rotate(0deg);
   }
 }
+
+#yun-tie-sdk-wrap .tie-panel-bar .tie-empty-tip a{
+  display: none!important;
+}
+
 :target{
     padding-top: 70px;
     margin-top: -70px;
