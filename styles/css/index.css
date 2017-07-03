@@ -6107,7 +6107,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #f7f7f7;
+  /* background-color: #f7f7f7; */
+  background: url(../images/bg.png) reapeat;
 }
 input,
 button,
