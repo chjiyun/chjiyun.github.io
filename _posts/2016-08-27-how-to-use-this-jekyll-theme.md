@@ -97,7 +97,7 @@ jekyll server
 
 ## 关于作者
 
-热爱开源，热爱折腾的front-end程序猿。更多个人信息和联系方式可以参照[我的简介](http://www.hifreud.com/Resume.io/)。
+热爱开源，热爱折腾的front-end程序猿。更多个人信息和联系方式可以参照[我的简介](http://chjiyun.com/author)。
 
 ## 关于打赏
 
