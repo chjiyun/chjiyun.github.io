@@ -7771,7 +7771,7 @@ td.visible-print {
 #uyan_frame{
   margin-top: 40px;
 }
-.Copyright{
+#uyan_frame .Copyright{
   display: none!important;
 }
 /* #yun-tie-sdk-wrap .tie-panel-bar .tie-empty-tip a{
