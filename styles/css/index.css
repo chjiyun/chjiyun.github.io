@@ -6384,8 +6384,16 @@ hr {
   text-align: center;
   border-top: 1px solid #eeeeee;
 }
-.footer p{
+.footer >.container{
+  font-family: 'Comic Sans MS', sans-serif;
   font-size: 14px;
+  color: #4c618f;
+}
+.footer .with-love{
+  display: inline-block;
+}
+.footer .fa-tint{
+  font-size: 16px;
 }
 .footer-links {
   margin: 10px 0;

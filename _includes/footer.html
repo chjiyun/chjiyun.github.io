@@ -1,9 +1,7 @@
 <footer class="footer" role="contentinfo">
 	<div class="container">
-        <p class="copyright">Copyright &copy; 2016-{{ site.time | date: '%Y' }} <a href="{{site.resume_site}}"><code>{{ site.author }}</code></a>.</p>
-        <p>
-            <i class="fa fa-heart animated infinite pulse"></i> 友情链接：<a href="http://lijiyun.cc/" target="_blank">lijiyun</a>, <a href="http://suwenhao.com/" target="_blank">suwenhao</a>, <a href="http://aifeiyy.com/" target="_blank">xufei</a>
-        </p>
+        <div class="copyright">&copy; 2016-{{ site.time | date: '%Y' }} <span class="with-love"><i class="fa fa-tint"></i></span><span class="author">{{ site.author }}</span></div>
+        <div><i class="fa fa-heart animated infinite pulse"></i><span> 友情链接：</span><a href="http://lijiyun.cc/" target="_blank">lijiyun</a>, <a href="http://suwenhao.com/" target="_blank">suwenhao</a>, <a href="http://aifeiyy.com/" target="_blank">xufei</a></div>
 	</div>
 </footer>
 
@@ -13,3 +11,4 @@
 <script src="{{ '/styles/js/lessismore.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/styles/js/application.js' | prepend: site.baseurl }}"></script>
 <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="http://v3.jiathis.com/code_mini/jiathis_r.js?move=0&amp;btn=r3.gif" charset="utf-8"></script>
