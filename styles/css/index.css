@@ -7768,9 +7768,15 @@ td.visible-print {
   }
 }
 
-#yun-tie-sdk-wrap .tie-panel-bar .tie-empty-tip a{
+#uyan_frame{
+  margin-top: 40px;
+}
+.Copyright{
   display: none!important;
 }
+/* #yun-tie-sdk-wrap .tie-panel-bar .tie-empty-tip a{
+  display: none!important;
+} */
 
 :target{
     padding-top: 70px;
