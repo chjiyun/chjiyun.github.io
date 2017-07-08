@@ -6391,6 +6391,7 @@ hr {
 }
 .footer .with-love{
   display: inline-block;
+  margin-right: 4px;
 }
 .footer .fa-tint{
   font-size: 16px;
