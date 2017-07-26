@@ -7767,7 +7767,9 @@ td.visible-print {
     transform: translate(0, 0) rotate(0deg);
   }
 }
-
+.myface{
+  color: #ff5b80;
+}
 #uyan_frame{
   margin-top: 40px;
 }

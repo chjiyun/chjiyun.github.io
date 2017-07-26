@@ -55,6 +55,20 @@
         }
       }
     }
+
+    //切换窗口时改变标题
+    function resetTabTitle() {
+      document.addEventListener('visibilitychange',function(){ //浏览器切换事件 
+        if(document.visibilityState == 'hidden') { //状态判断 
+            document.title = '页面崩溃啦 | 快回来'; 
+        }else {
+            document.title = 'chjiyun.com'; 
+        }
+      })
+    }
+
+    resetTabTitle();
+    
   })
 
 }(jQuery)
