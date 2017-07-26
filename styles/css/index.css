@@ -7162,6 +7162,7 @@ td.visible-print {
   animation: my-face 5s infinite ease-in-out;
   display: inline-block;
   margin: 0 5px;
+  color: #ff5b80;
 }
 @-webkit-keyframes my-face {
   2% {
@@ -7766,9 +7767,6 @@ td.visible-print {
     -ms-transform: translate(0, 0) rotate(0deg);
     transform: translate(0, 0) rotate(0deg);
   }
-}
-.myface{
-  color: #ff5b80;
 }
 #uyan_frame{
   margin-top: 40px;
