@@ -34,7 +34,6 @@ Axis 2.0的入门
 =====================
 说实话没仔细看过这些博客，纯粹被标题吸引
 [http://blog.csdn.net/lifetragedy](http://blog.csdn.net/lifetragedy)
-http://blog.csdn.net/lifetragedy
 
 [冯立彬的博客]
 =====================

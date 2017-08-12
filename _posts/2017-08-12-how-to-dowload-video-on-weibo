@@ -1,0 +1,30 @@
+---
+layout: post
+title:  如何下载微博上的视频
+date:   2017-08-12 12:10:00 +0800
+categories: document
+tag: 教程
+---
+
+* content
+{:toc}
+
+## 获取微博视频地址
+
+点击高亮链接即可打开新窗口播放，地址栏就是这个视频的源地址
+
+## 打开这个网站
+
+浏览器打开新标签页，地址栏输入www.weibovideo.com（可省略www.）
+
+## 点击生成的链接下载视频
+
+复制第一步的视频地址到第一个输入框，单击右边的按钮`解析视频`，下方的下载地址会自动生成，
+chrome下可以直接点击下载地址会打开新窗口播放，这时候就可以下载到本地了。
+
+>warn: 此方法支持的视频来源：`微博视频`、`微录客`、`小咖秀`、`秒拍`、`bilibili`。
+
+{% highlight bash %}
+If you think this tutorial is good, please give me a favor. 
+Thanks for your support.
+{% endhighlight %}
