@@ -7772,6 +7772,7 @@ td.visible-print {
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 360px;
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
@@ -7783,10 +7784,8 @@ td.visible-print {
 .info-link >.info-icon {
     float: left;
     overflow: hidden;
-    margin: 20px;
-}
-.info-link >.info-icon:hover{
-    text-decoration:none;
+    margin: 16px;
+    text-decoration: none;
 }
 .info-link >.info-icon i {
     text-align: center;
