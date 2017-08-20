@@ -6344,7 +6344,7 @@ hr {
 }
 /* Page headers */
 .docs-header {
-  padding: 30px 15px;
+  padding: 30px 15px 50px;
   /* side padding builds on .container 15px, so 30px */
   font-size: 16px;
   text-align: center;
@@ -7772,7 +7772,7 @@ td.visible-print {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 360px;
+  width: 328px;
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
