@@ -316,7 +316,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, 'Microsoft YaHei', sans-serif, "Open Sans", "Helvetica Neue", Helvetica, Arial, 'Microsoft YaHei', sans-serif;
+  /* font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, 'Microsoft YaHei', sans-serif, "Open Sans", "Helvetica Neue", Helvetica, Arial, 'Microsoft YaHei', sans-serif; */
+  font-family: 'Neucha', "PingFang SC", "Microsoft YaHei", sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -389,8 +390,8 @@ h2,
   padding-right: 60px;
   margin-right: -60px;
   line-height: 1.5;
-  border-left: solid 3px #2d93f9;
-  background-color: #f5f5f5;
+  border-left: solid 3px #5eafff;
+  background-color: #f4f8fd;
   background-clip: padding-box;
 }
 h3,
@@ -7815,7 +7816,7 @@ td.visible-print {
   display: none!important;
 } */
 
-:target{
+/* :target{
     padding-top: 70px;
     margin-top: -70px;
-}
+} */
