@@ -245,6 +245,7 @@ table {
 p {
   font-size: 15px;
   margin: 0 0 10px;
+  line-height: 1.6;
 }
 /*.lead {
   margin-bottom: @line-height-computed;
@@ -7854,7 +7855,7 @@ td.visible-print {
 .back-to-top {
   position: fixed;
   bottom: 0;
-  right: 50px;
+  right: 30px;
   z-index: 1000;
   width: 36px;
   height: 40px;
