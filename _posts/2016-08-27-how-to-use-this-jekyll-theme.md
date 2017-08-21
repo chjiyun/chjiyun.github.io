@@ -107,7 +107,7 @@ jekyll server
 
 ### 支付宝
 
-<img src="{{ '/styles/images/zhifubao.png' | prepend: site.baseurl }}" alt="支付宝二维码付款给Freud" width="310" />
+<img src="{{ '/styles/images/zhifubao.png' | prepend: site.baseurl }}" alt="支付宝二维码付款给Freud" />
 
 ### 微信
 

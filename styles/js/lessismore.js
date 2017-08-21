@@ -21,7 +21,7 @@
   	$(window).load(initilizeAfterLoad);
 
     function initilizeAfterLoad(){
-      repairTheImagesWhichCrossTheMaxWidth();
+      // repairTheImagesWhichCrossTheMaxWidth();
       resetHeadersStyles();
     }
 
@@ -55,6 +55,19 @@
         }
       }
     }
+
+    //窗口滚动时改变回到顶部图标的状态
+    function backToTopState(){
+      var top = $(".back-to-top");
+      $(window).scroll(function(){
+        $(this).scrollTop() > 100 ? top.addClass("back-to-top-on") : top.removeClass("back-to-top-on");
+      });
+
+      top.on("click",function(){
+        $("body").animate({scrollTop:0},300,"linear");
+      });
+    }
+
 
     //切换窗口时改变标题
     function resetTabTitle() {
