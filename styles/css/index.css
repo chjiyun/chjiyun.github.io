@@ -380,35 +380,71 @@ h6 .small {
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 34px;
+}
+@media (max-width: 750px) {
+  h1, .h1 {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 28px;
 }
-.post-content > h2{
+@media (max-width: 750px) {
+  h2, .h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+/* .post-content > h2{
   padding-right: 60px;
   margin-right: -60px;
   line-height: 1.5;
   border-left: solid 3px #5eafff;
   background-color: #f4f8fd;
   background-clip: padding-box;
-}
+} */
 h3,
 .h3 {
   font-size: 24px;
 }
+@media (max-width: 750px) {
+  h3, .h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+}
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 20px;
+}
+@media (max-width: 750px) {
+  h4, .h4 {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 18px;
+}
+@media (max-width: 750px) {
+  h5, .h5 {
+    font-size: 16px;
+    text-align: center;
+  }
 }
 h6,
 .h6 {
-  font-size: 12px;
+  font-size: 14px;
+}
+@media (max-width: 750px) {
+  h6, .h6 {
+    font-size: 12px;
+    text-align: center;
+  }
 }
 .page-header {
   padding-bottom: 9px;
@@ -6355,6 +6391,7 @@ hr {
 }
 .docs-header h1 {
   color: #fff;
+  font-size: 34px;
 }
 .docs-header p {
   font-weight: 300;
@@ -6453,16 +6490,24 @@ hr {
   background: #fff;
   background-color: #fff;
   padding: 1px 60px 80px 60px;
-  margin: 0 -15px;
+  margin: 0 -15px 10px;
   border: none;
   border-radius: 0 0 4px 4px;
-}
-.docs-content .container-fluid {
-  padding: 0;
-}
-.docs-content {
   -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 414px) {
+  .docs-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .banner{
+    padding-left: 0;
+  }
+}
+
+.docs-content .container-fluid {
+  padding: 0;
 }
 .docs-section + .docs-section {
   padding-top: 40px;
