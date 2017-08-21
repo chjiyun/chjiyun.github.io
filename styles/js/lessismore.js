@@ -23,6 +23,7 @@
     function initilizeAfterLoad(){
       // repairTheImagesWhichCrossTheMaxWidth();
       resetHeadersStyles();
+      backToTopState();
     }
 
     // 重新计算图片显示大小。
