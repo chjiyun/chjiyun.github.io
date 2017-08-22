@@ -244,7 +244,7 @@ table {
 }
 p {
   font-size: 15px;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
   line-height: 1.6;
 }
 /*.lead {
@@ -382,11 +382,12 @@ h6 .small {
 }
 h1,
 .h1 {
-  font-size: 34px;
+  margin: 45px 0 20px;
+  font-size: 30px;
 }
 @media (max-width: 750px) {
   h1, .h1 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .post-header{
     text-align: center;
@@ -394,7 +395,8 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 28px;
+  margin: 35px 0 20px;
+  font-size: 26px;
 }
 @media (max-width: 750px) {
   h2, .h2 {
@@ -411,7 +413,8 @@ h2,
 } */
 h3,
 .h3 {
-  font-size: 24px;
+  margin: 20px 0;
+  font-size: 21px;
 }
 @media (max-width: 750px) {
   h3, .h3 {
@@ -420,30 +423,15 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 20px;
-}
-@media (max-width: 750px) {
-  h4, .h4 {
-    font-size: 16px;
-  }
-}
-h5,
-.h5 {
   font-size: 18px;
 }
 @media (max-width: 750px) {
-  h5, .h5 {
-    font-size: 16px;
+  h4, .h4 {
+    font-size: 17px;
   }
 }
-h6,
-.h6 {
-  font-size: 14px;
-}
-@media (max-width: 750px) {
-  h6, .h6 {
-    font-size: 12px;
-  }
+h5, .h5, h6, .h6 {
+  font-size: 16px;
 }
 .page-header {
   padding-bottom: 9px;
@@ -4036,6 +4024,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .breadcrumb > li {
   display: inline-block;
 }
+@media screen and (min-width: 992px){
+  .breadcrumb > li a{
+    font-size: 15px;
+  }
+}
 .breadcrumb > li .fa{
   margin-right: 3px;
 }
@@ -5879,6 +5872,7 @@ body {
   margin-bottom: 0;
   background-color: transparent;
   border: 0;
+  border-radius: 0;
 }
 .highlight pre code {
   font-size: inherit;
@@ -6136,12 +6130,12 @@ pre code {
 .lang-less .hljs-built_in {
   color: #859900;
 }
-h1,
+/* h1,
 h2,
 h3 {
   margin-top: 30px;
-  margin-bottom: 15px;
-}
+  margin-bottom: 20px;
+} */
 *,
 *:before,
 *:after {
@@ -7857,7 +7851,7 @@ td.visible-print {
   bottom: 0;
   right: 30px;
   z-index: 1000;
-  width: 36px;
+  width: 40px;
   height: 40px;
   line-height: 40px;
   background: rgb(67, 117, 158);

@@ -19,7 +19,7 @@ tag: 教程
 
 ## 点击生成的链接下载视频
 
-![/styles/images/weibovideo/weibovideo.png]({{ '/styles/images/weibovideo/weibovideo.png' | prepend: site.baseurl  }})
+![weibovideo.png]({{ '/styles/images/weibovideo/weibovideo.png' | prepend: site.baseurl  }})
 
 复制第一步的视频地址到第一个输入框，单击右边的按钮`解析视频`，下方的下载地址会自动生成。
 chrome下可以直接点击下载地址会打开新窗口播放，这时候就可以下载到本地了。

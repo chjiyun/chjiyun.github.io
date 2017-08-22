@@ -65,7 +65,7 @@
       });
 
       top.on("click",function(){
-        $("body").animate({scrollTop:0},450,"linear");
+        $("body").animate({scrollTop:0},450);
       });
     }
 
