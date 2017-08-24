@@ -25,7 +25,8 @@ markdown: kramdown
 kramdown:
   input:  GFM
   
-baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+# old: baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+baidu_analysis: 63105de91094f6a9cff47feed9e728a0
 
 FB:
   comments :
