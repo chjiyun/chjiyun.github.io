@@ -1,87 +1,77 @@
----
-layout: default
----
-
- <div class="container docs-container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="sidebar hidden-print" role="complementary">
-            <div id="navigation">
-              <h1>目录</h1>
-              <ul class="nav sidenav">
-
-                {% for post in site.posts  %}
-                  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-                  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-                  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-
-                  {% if forloop.first %}
-                    <li><a href="#year_{{this_year}}">{{this_year}}</a>
-                      <ul class="nav">
-                        <li><a href="#month_{{this_year}}_{{this_month}}">{{this_month}}</a></li>
-                  {% endif %}
-
-                  {% if forloop.last %}
-                        </ul>
-                      </li>
-                  {% else %}
-                    {% if this_year != next_year %}
-                        </ul>
-                      </li>
-                      <li><a href="#year_{{next_year}}">{{next_year}}</a>
-                        <ul class="nav">
-                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
-                    {% else %}    
-                      {% if this_month != next_month %}
-                          <li><a href="#month_{{next_year}}_{{next_month}}">{{next_month}}</a></li>
-                      {% endif %}
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-9" role="main">
-          <div class="panel docs-content">
-            <div class="wrapper">
-              <div class="home">
-                {% for post in site.posts  %}
-                  {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-                  {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-                  {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-                  {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-
-                  {% if forloop.first %}
-                    <h1 id="year_{{this_year}}">{{this_year}}</h1>
-                    <h2 id="month_{{this_year}}_{{this_month}}">{{this_month}}</h2>
-                    <ul>
-                  {% endif %}
-
-                  <ol class="breadcrumb">
-                   <li><i class="fa fa-calendar-check-o" aria-hidden="true"></i><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                  </ol>
-                  {% if forloop.last %}
-                    </ul>
-                  {% else %}
-                    {% if this_year != next_year %}
-                      </ul>
-                      <h1 id="year_{{next_year}}">{{next_year}}</h1>
-                      <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h2>
-                      <ul>
-                    {% else %}    
-                      {% if this_month != next_month %}
-                        </ul>
-                        <h2 id="month_{{next_year}}_{{next_month}}">{{next_month}}</h2>
-                        <ul>
-                      {% endif %}
-                    {% endif %}
-                  {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="renderer" content="webkit" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rain Effect | chjiyun.com</title>
+	<meta name="keywords" content="raindrops, effect, background" />
+	<meta name="description" content="Some WebGL experiments with raindrop effects on chjiyun.com" />
+	<link href='https://fonts.cat.net/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="shortcut icon" href="favicon.ico">
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="demo">
+	<div class="image-preload">
+		<img src="img/drop-color.png" />
+		<img src="img/drop-alpha.png" />
+		<img src="img/weather/texture-rain-fg.png" />
+		<img src="img/weather/texture-rain-bg.png" />
+		<img src="img/weather/texture-sun-fg.png" />
+		<img src="img/weather/texture-sun-bg.png" />
+		<img src="img/weather/texture-fallout-fg.png" />
+		<img src="img/weather/texture-fallout-bg.png" />
+		<img src="img/weather/texture-drizzle-fg.png" />
+		<img src="img/weather/texture-drizzle-bg.png" />
+	</div>
+	<div class="container">
+		<header class="codrops-header">
+			<!-- <h1>Rain &amp; Water Effects</h1> -->
+			<a href="//me.chjiyun.com">BLOG</a>
+		</header>
+		<div class="slideshow">
+			<canvas width="1" height="1" id="container" style="position:absolute"></canvas>
+			<!-- Drizzle -->
+			<div class="slide" id="slide-2" data-weather="drizzle">
+				<div class="slide__element slide__element--date">Saturday, 24<sup>th</sup> of October 2050</div>
+				<div class="slide__element slide__element--temp">18°<small>C</small></div>
+			</div>
+			<!-- Heavy Rain -->
+			<div class="slide" id="slide-1" data-weather="rain">
+				<div class="slide__element slide__element--date">Sunday, 25<sup>th</sup> of October 2050</div>
+				<div class="slide__element slide__element--temp">12°<small>C</small></div>
+			</div>
+			<!-- Heavy rain -->
+			<div class="slide" id="slide-5" data-weather="storm">
+				<div class="slide__element slide__element--date">Wednesday, 26<sup>th</sup> of October 2050</div>
+				<div class="slide__element slide__element--temp">20°<small>C</small></div>
+			</div>
+			<!-- Fallout (greenish overlay with slightly greenish/yellowish drops) -->
+			<div class="slide" id="slide-4" data-weather="fallout">
+				<div class="slide__element slide__element--date">Tuesday, 27<sup>th</sup> of October 2050</div>
+				<div class="slide__element slide__element--temp">34°<small>C</small></div>
+			</div>
+			<!-- Sunny -->
+			<div class="slide" id="slide-3" data-weather="sunny">
+				<div class="slide__element slide__element--date">Monday, 28<sup>th</sup> of October 2050</div>
+				<div class="slide__element slide__element--temp">25°<small>C</small></div>
+			</div>
+			<nav class="slideshow__nav">
+				<a class="nav-item" href="#slide-2"><i class="icon icon--drizzle"></i><span>10/24</span></a>
+				<a class="nav-item" href="#slide-1"><i class="icon icon--rainy"></i><span>10/25</span></a>
+				<a class="nav-item" href="#slide-5"><i class="icon icon--storm"></i><span>10/26</span></a>
+				<a class="nav-item" href="#slide-4"><i class="icon icon--radioactive"></i><span>10/27</span></a>
+				<a class="nav-item" href="#slide-3"><i class="icon icon--sun"></i><span>10/28</span></a>
+			</nav>
+		</div>
+		<p class="nosupport">Sorry, but your browser does not support WebGL!</p>
+	</div>
+	<!-- /container -->
+	<script src="js/index.min.js"></script>
+</body>
+</html>
