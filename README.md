@@ -1,5 +1,5 @@
 ## raindrop effect
 
-[chjiyun.com](http://chjiyun.com)
+webgl[chjiyun.com](http://chjiyun.com)
 
-blog: [hexo-blog](http://me.chjiyun.com)
+My blog: [hexo-blog](http://me.chjiyun.com)
